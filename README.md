@@ -1,4 +1,4 @@
-Add snap and flatpak support,update your system,update your system, more capabilities coming soon 
+Add snap and flatpak support,update your system and autoremove, more capabilities coming soon 
 
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
