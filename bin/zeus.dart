@@ -13,7 +13,7 @@ void choice()
  print("[1]Add Snap support");
  print("[2]Add Flatpak Support");
  print("[3]Update the System");
- print("[4]Autoremove");//Needs Work 
+ print("[4]Autoremove"); 
  var option = int.parse(stdin.readLineSync()!);
 
  System.invoke("clear");
@@ -102,11 +102,41 @@ switch(distro){
 
 }
 void update_system(){
+ switch(distro){
+ case 1:
+  System.invoke("sudo dnf update");
+  break;
+ case 2:
+  System.invoke("sudo pacman -Syy");
+  break;
+ case 3:
+  System.invoke("sudo apt update");
+  System.invoke("sudo apt upgrade");
+  break;
+ case 4:
+  System.invoke("sudo apt update");
+  System.invoke("sudo apt upgrade");
+  break;
 
+ }
 
 }
 void autoremove()
 {
- print("hello");
+ switch(distro){
+  case 1:
+   System.invoke("sudo dnf autoremove");
+   break;
+  case 2:
+   print("Not available for Arch(at least yet");
+   break;
+  case 3:
+   System.invoke("sudo apt autoremove");
+   break;
+  case 4:
+   System.invoke("sudo apt autoremove");
+   break;
+
+ }
 
 }
