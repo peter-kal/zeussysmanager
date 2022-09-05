@@ -5,7 +5,7 @@ void main(){
  choice();
 }
 var distro;
-
+var option;
 void choice()
 {
 
@@ -14,8 +14,10 @@ void choice()
  print("[2]Add Flatpak Support");
  print("[3]Update the System");
  print("[4]Autoremove"); 
- var option = int.parse(stdin.readLineSync()!);
-
+ option = int.parse(stdin.readLineSync()!);
+ 
+}
+void distrofun(){
  System.invoke("clear");
  print("What distro are you on?");
  print("List of supported distros:");
