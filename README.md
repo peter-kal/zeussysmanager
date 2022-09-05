@@ -6,7 +6,7 @@ A CLI program written in Dart to :
 -Generate A Password
 
 You can find the executable on the release UI.
-Note: Some times the release exec might be outdated so instead take it from the `bin/` folder
+Note: Some times the release exec might be outdated so instead take it from the `exec/` folder
 
 You can run this:
 `./executablename.exe`
