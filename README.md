@@ -1,5 +1,9 @@
-Add snap and flatpak support,update your system,autoremove and generate passwords more capabilities coming soon 
-
+A CLI program written in Dart to :
+-Add Snap Support
+-Add Flatpak Support 
+-Update The System
+-Autoremove 
+-Generate A Password 
 
 You can find the executable on the release UI.
 Note: Some times the release exec might be outdated so instead take it from the `bin/` folder
