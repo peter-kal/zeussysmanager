@@ -1,11 +1,19 @@
 import 'package:zeus/zeus.dart' as zeus;
 import 'package:system/system.dart';
 import 'dart:io';
+import 'package:password_generator/src/password_generator.dart';
+
+//main function
 void main(){
  choice();
 }
+
+//Global Variables 
 var distro;
 var option;
+
+
+
 void choice()
 {
 
@@ -14,9 +22,16 @@ void choice()
  print("[2]Add Flatpak Support");
  print("[3]Update the System");
  print("[4]Autoremove"); 
+ print("[5]Generate Password");
  option = int.parse(stdin.readLineSync()!);
- 
+ if (option == 5){
+  passgenfun();
+ }else {
+  distrofun();
+ }
 }
+
+
 void distrofun(){
  System.invoke("clear");
  print("What distro are you on?");
@@ -52,6 +67,7 @@ void distrofun(){
  }
 }
 
+
 void snap_support(){
  switch (distro)
  {
@@ -81,6 +97,10 @@ void snap_support(){
 
 
 }
+
+
+
+
 void flatpak_support(){
 switch(distro){
  case 1:
@@ -103,6 +123,11 @@ switch(distro){
 }
 
 }
+
+
+
+
+
 void update_system(){
  switch(distro){
  case 1:
@@ -123,6 +148,10 @@ void update_system(){
  }
 
 }
+
+
+
+
 void autoremove()
 {
  switch(distro){
@@ -141,4 +170,24 @@ void autoremove()
 
  }
 
+}
+
+
+passgenfun()
+{
+var passlenght;
+print("Type the wanted length of the passcode");
+passlenght = int.parse(stdin.readLineSync()!);
+
+
+final _passwordGenerator = PasswordGenerator(
+    length: passlenght,
+    hasCapitalLetters: true,
+    hasNumbers: true,
+    hasSmallLetters: true,
+    hasSymbols: true,
+  );
+
+final String _password = _passwordGenerator.generatePassword();
+print(_password);
 }

@@ -13,4 +13,5 @@ dev_dependencies:
   lints: ^2.0.0
   test: ^1.16.0
 dependencies:
+  password_generator: ^1.0.0
   system: ^1.0.0
