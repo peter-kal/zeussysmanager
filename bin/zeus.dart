@@ -191,3 +191,7 @@ final _passwordGenerator = PasswordGenerator(
 final String _password = _passwordGenerator.generatePassword();
 print(_password);
 }
+
+
+//*Comes with no warranty, I and every contributor of this project is not responsible if this program break your system at any means*
+//peter-kal 2022
