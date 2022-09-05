@@ -12,8 +12,6 @@ void main(){
 var distro;
 var option;
 
-
-
 void choice()
 {
 
@@ -30,7 +28,6 @@ void choice()
   distrofun();
  }
 }
-
 
 void distrofun(){
  System.invoke("clear");
@@ -67,7 +64,6 @@ void distrofun(){
  }
 }
 
-
 void snap_support(){
  switch (distro)
  {
@@ -98,9 +94,6 @@ void snap_support(){
 
 }
 
-
-
-
 void flatpak_support(){
 switch(distro){
  case 1:
@@ -124,10 +117,6 @@ switch(distro){
 
 }
 
-
-
-
-
 void update_system(){
  switch(distro){
  case 1:
@@ -148,10 +137,6 @@ void update_system(){
  }
 
 }
-
-
-
-
 void autoremove()
 {
  switch(distro){
@@ -171,7 +156,6 @@ void autoremove()
  }
 
 }
-
 
 passgenfun()
 {
