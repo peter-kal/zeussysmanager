@@ -2,7 +2,7 @@ Add snap and flatpak support,update your system,autoremove and generate password
 
 
 You can find the executable on the release UI.
-Note: Some times the release might be outdated so instead take it for the `bin/` folder
+Note: Some times the release exec might be outdated so instead take it from the `bin/` folder
 
 You can run this:
 `./executablename.exe`
