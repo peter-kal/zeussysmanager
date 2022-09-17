@@ -150,7 +150,7 @@ void autoremove()
    System.invoke("sudo apt autoremove");
    break;
   case 4:
-   System.invoke("sudo apt autoremove");
+   System.invoke("sudo apt autoremove");//peter-kal 2022
    break;
 
  }
